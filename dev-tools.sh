@@ -31,5 +31,4 @@ yum -y install kubectl
 
 # install helm
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get-helm.sh
-chmod +x get-helm.sh
 bash get-helm.sh
