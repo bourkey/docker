@@ -19,6 +19,13 @@ cd /var/tmp/awscli-bundle/
 rm -f /var/tmp/awscli-bundle.zip
 rm -rf /var/tmp/awscli-bundle
 
+# install aws authenticator
+cd ~
+curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator
+chmod +x aws-iam-authenticator
+mv aws-iam-authenticator /usr/bin
+
+
 # Install pip
 cd /var/tmp/
 curl -O https://bootstrap.pypa.io/get-pip.py
