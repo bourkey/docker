@@ -38,10 +38,6 @@ RUN curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get-he
 RUN chmod +x get-helm.sh
 RUN bash get-helm.sh
 
-RUN rm -f /bin/python
-RUN ln -s /bin/python3.6 /bin/python
-
-
 WORKDIR /
 
 CMD ["/bin/bash"]
