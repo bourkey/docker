@@ -25,7 +25,6 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 /usr/bin/python3.6 get-pip.py
 
 # install kubectl
-COPY kubernetes.repo /etc/yum.repos.d/kubernetes.repo
 yum -y update
 yum -y install kubectl
 

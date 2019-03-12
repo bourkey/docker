@@ -6,9 +6,9 @@
 FROM centos:7
 LABEL maintainer="https://github.com/bourkey"
 
-
-COPY dev-tools.sh /var/temp/dev-tools.sh
-WORKDIR /var/temp
+COPY kubernetes.repo /etc/yum.repos.d/kubernetes.repo
+COPY dev-tools.sh /var/tmp/dev-tools.sh
+WORKDIR /var/tmp
 RUN bash dev-tools.sh
 
 WORKDIR /
