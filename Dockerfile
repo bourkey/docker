@@ -4,7 +4,7 @@
 # Yes this is pretty heavy for a container....
 #
 FROM centos:7
-MAINTAINER Keiran Sweet "Keiran@gmail.com"
+LABEL maintainer="https://github.com/bourkey"
 RUN yum -y update
 RUN yum -y install epel-release
 RUN yum -y install which openssl git vim mlocate curl sudo unzip file python-devel python-pip python36 python36-devel wget bind-utils
