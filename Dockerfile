@@ -7,7 +7,10 @@ FROM centos:7
 LABEL maintainer="https://github.com/bourkey"
 
 
-COPY dev-tools.sh /root/dev-tools.sh
+COPY dev-tools.sh /var/temp/dev-tools.sh
+WORKDIR /var/temp
+RUN bash dev-tools.sh
+
 WORKDIR /
 
 CMD ["/bin/bash"]
