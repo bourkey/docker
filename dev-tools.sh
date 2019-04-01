@@ -22,7 +22,7 @@ mv aws-iam-authenticator /usr/bin
 
 # install okta aws 
 mkdir ~/.okta
-PREFIX=~/.okta 
+export PREFIX=~/.okta 
 bash <(curl -fsSL https://raw.githubusercontent.com/oktadeveloper/okta-aws-cli-assume-role/master/bin/install.sh) -i
 touch ~/.okta/config.properties
 

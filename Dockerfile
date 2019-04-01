@@ -6,6 +6,7 @@
 FROM centos:7
 LABEL maintainer="https://github.com/bourkey"
 
+ENV PREFIX "/root/.okta"
 COPY kubernetes.repo /etc/yum.repos.d/kubernetes.repo
 COPY dev-tools.sh /var/tmp/dev-tools.sh
 WORKDIR /var/tmp
